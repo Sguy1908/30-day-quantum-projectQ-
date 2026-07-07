@@ -18,7 +18,7 @@ def run_circuit(qc):
 
 def save_histogram(counts): 
     plot_histogram(counts) 
-    plt.savefig("outputs/bell_histogram.png")
+    plt.savefig("static/histogram.png")
     plt.close() 
     
 

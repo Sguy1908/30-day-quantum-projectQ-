@@ -5,7 +5,7 @@ sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
 
 from flask import Flask, render_template, request
-from quantum.bell_states import create_bell, run_circuit
+from quantum.bell_states import create_bell, run_circuit, save_histogram
 from quantum.entanglement import create_entanglement, run_entanglement 
 from quantum.teleportation import create_teleportation, run_teleportation  
 
@@ -22,7 +22,8 @@ def home():
 def bell():
     qc = create_bell()
     counts = run_circuit(qc)
-    return render_template("/bell.html", counts=counts)  
+    save_histogram(counts)  # Save the histogram as an image
+    return render_template("/bell.html", counts=counts, histogram="histogram.png")  
 
 @app.route("/entanglement") #entanglement page
 def entanglement():

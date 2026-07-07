@@ -7,6 +7,10 @@
          <h1>Bell</h1>
          <h2>Measurement Results</h2>
           <pre>{{ counts }}</pre> 
+          <img src="{{ url_for('static', filename=histogram) }}"
+     alt="Histogram">
+          
           <a href="/">Back to Dashboard</a> 
+          
     </body> 
 </html> 
