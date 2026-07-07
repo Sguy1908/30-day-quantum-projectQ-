@@ -5,9 +5,9 @@ from qiskit.transpiler.preset_passmanagers import generate_preset_pass_manager
 # QiskitRuntimeService.save_account(
 #     channel="ibm_quantum_platform",
 #     plans_preference=["open"],
-#     token="b3kEJAkZNCImzlvhw_G3P17mDixFqsdW7s3SBGV6Iabn",
+#     token="...",
 #     overwrite=True,
-#     instance="crn:v1:bluemix:public:quantum-computing:us-east:a/817e1dda560c4e8fb7ef7705aaf1b004:cdfdfaa7-d799-4661-80fa-4851c8aa378a::"
+#     instance=".."
 # )
 service = QiskitRuntimeService() #creates connection to ibm quantum acc to allow access to simulators and stuff
 
