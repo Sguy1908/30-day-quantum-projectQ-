@@ -25,7 +25,7 @@ for qc, basis in zip(circuits, bob_bases):
         qc.h(0)
     qc.measure(0,0)
     
-#simulate the measurements
+#simulate the measurements  
 sampler = StatevectorSampler()
 job = sampler.run(circuits, shots=1)
 result = job.result()
